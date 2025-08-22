@@ -12,7 +12,7 @@ import SignupScreen from './src/SignupScreen';
 import AddUserScreen from './src/AddUserScreen';
 import AllUsersScreen from './src/AllUsersScreen';
 import DashboardScreen from './src/DashboardScreen';
-import SlideScreen from './src/SlideScreen';
+import SlideScreen from './src/SlideScreen2';
 
 const Stack = createNativeStackNavigator();
 
@@ -22,7 +22,7 @@ function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator initialRouteName="Slide" screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="Signup" component={SignupScreen} />
           <Stack.Screen name="Home" component={HomeScreen} />

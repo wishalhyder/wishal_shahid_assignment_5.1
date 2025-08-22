@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Dimensions } from 'react-native';
+import { View, StyleSheet, Dimensions, Text } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -43,6 +43,14 @@ export default function SlideCard() {
       <GestureDetector gesture={panGesture}>
         <Animated.View style={[styles.card, animatedStyle]} />
       </GestureDetector>
+      <GestureDetector gesture={panGesture}>
+        <Animated.View style={[styles.card, animatedStyle]} />
+      </GestureDetector>
+      <GestureDetector  gesture={panGesture}>
+        <Animated.View style={[styles.card, animatedStyle]} >
+          <Text>Hello</Text>
+        </Animated.View>
+      </GestureDetector>
     </View>
   );
 }
@@ -55,8 +63,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   card: {
-    width: 300,
-    height: 200,
+    width: 350,
+    height: 100,
     borderRadius: 20,
     backgroundColor: 'white',
     elevation: 5,
