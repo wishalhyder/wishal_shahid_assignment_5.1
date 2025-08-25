@@ -12,7 +12,7 @@ import SignupScreen from './src/SignupScreen';
 import AddUserScreen from './src/AddUserScreen';
 import AllUsersScreen from './src/AllUsersScreen';
 import DashboardScreen from './src/DashboardScreen';
-import SlideScreen from './src/SlideScreen2';
+import SlideScreen from './src/SlideScreen';
 
 const Stack = createNativeStackNavigator();
 
